@@ -10,5 +10,3 @@ higherValueElement.textContent = higherValue;
 function drawNumber() {
   return parseInt(Math.random() * higherValue + 1);
 }
-
-console.log(secretNumber);

@@ -23,9 +23,9 @@ function guessValidation(voiceRecognizedElement) {
       <button id="play-again" class="btn-play">Jogar novamente?</button
       `;
       } else if (number > secretNumber) {
-        guessElement.innerHTML = `<div>O número secreto é menor <i class="fa-solid fa-arrow-down"></i></div>`;
+        guessElement.innerHTML += `<div>O número secreto é menor <i class="fa-solid fa-arrow-down"></i></div>`;
       } else {
-        guessElement.innerHTML = `<div>O número secreto é maior <i class="fa-solid fa-arrow-up"></i></div>`;
+        guessElement.innerHTML += `<div>O número secreto é maior <i class="fa-solid fa-arrow-up"></i></div>`;
       }
     }
   }
