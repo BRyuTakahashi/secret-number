@@ -9,11 +9,11 @@ function guessValidation(voiceRecognizedElement) {
     `;
   } else {
     if (Number.isNaN(number)) {
-      guessElement.innerHTML = "Valor invalido";
+      guessElement.innerHTML += "Valor invalido";
       guessTries--;
     } else if (number > higherValue || number < lowerValue) {
       guessTries--;
-      guessElement.innerHTML = `Número invalido: fale um número entre ${lowerValue} e ${higherValue}`;
+      guessElement.innerHTML += `Número invalido: fale um número entre ${lowerValue} e ${higherValue}`;
     } else {
       if (number === secretNumber) {
         document.body.innerHTML = `
